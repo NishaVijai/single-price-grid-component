@@ -1,42 +1,186 @@
+:root {
+    --cyan-color: hsl(179, 62%, 43%);
+    --light-cyan-color: hsl(179, 50%, 54%);
+    --bright-yellow-color: hsl(71, 73%, 54%);
+    --light-gray-color: hsl(204, 43%, 93%);
+    --grayish-blue-color: hsl(218, 22%, 67%);
+    --white-color: hsl(0, 0%, 100%);
+    --body-bg-color: hsl(180, 8%, 93%);
+}
+
 *,
 *::after,
 *::before {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
+    background-color: var(--body-bg-color);
     min-height: 100vh;
-    margin: 0;
-    padding: 0;
     font-family: "Karla Regular", sans-serif;
     font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
 }
 
-main, 
-footer {
+main {
+    max-width: 375px;
+    box-shadow: 2px 5px 20px rgba(148, 175, 197, 0.5);
+    border-radius: 10px;
     font-size: 1rem;
+}
+
+main section {
+    padding: 1.5rem;
 }
 
 h1,
 h2 {
     font-family: "Karla Bold", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.custom__flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.5rem;
+}
+
+.why-us__section-container {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.why-us__section-container a {
+    color: var(--light-gray-color);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.why-us__section-container a:hover,
+.why-us__section-container a:focus {
+    text-decoration: underline;
+}
+
+.why-us__section-container ul {
+    margin-top: 1rem;
+}
+
+.cyan--font-color {
+    color: var(--cyan-color);
+}
+
+.cyan--bg-color {
+    background-color: var(--cyan-color);
+}
+
+.light-cyan--bg-color {
+    background-color: var(--light-cyan-color);
+}
+
+.bright-yellow--font-style {
+    color: var(--bright-yellow-color);
+    font-weight: 700;
+    padding: 1rem 0;
+}
+
+.bright-yellow-container--style {
+    background-color: var(--bright-yellow-color);
+}
+
+.light-gray--font-color {
+    color: var(--light-gray-color);
+}
+
+.grayish-blue--font-color {
+    color: var(--grayish-blue-color);
+}
+
+.white--bg-color {
+    background-color: var(--white-color);
+}
+
+.custom--line-height {
+    line-height: 1.8;
+}
+
+.custom--font-size {
+    font-size: 2.5rem;
+}
+
+.custom--font-size-small {
+    font-size: 1rem;
+    padding-top: -10px;
+}
+
+.custom--width {
+    max-width: 60vw;
 }
 
 /* footer style */
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
+footer {
+    display: none;
+    
 }
 
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+/* media query for desktop */
+@media only screen and (min-width: 600px) {
+    main {
+        max-width: 80vw;
+    }
+
+    main section {
+        text-align: center;
+    }
+
+    button {
+        width: 40%;
+    }
+
+    .custom--width {
+        max-width: 100%;
+    }
+
+    .custom__flex-container {
+        justify-content: center;
+    }
+
+    footer {
+        display: block;
+        margin: 2rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    footer a {
+        color: hsl(228, 45%, 44%);
+    }
 }
 
 /* font face */
 @font-face {
     font-family: "Karla Regular";
-    /* src: url(fonts/karla-regular.eot); */
     src: url("../../assets/fonts/Karla/static/Karla-Regular.ttf");
     font-weight: 400;
 }
