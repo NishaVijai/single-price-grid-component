@@ -138,32 +138,42 @@ button {
     max-width: 60vw;
 }
 
-/* footer style */
 footer {
     display: none;
-    
 }
 
 /* media query for desktop */
 @media only screen and (min-width: 600px) {
     main {
-        max-width: 80vw;
+        display: grid;
+        grid-template-areas: 
+        "first-section first-section"
+        "second-section third-section"
+        "second-section third-section";
+        max-width: 600px;
     }
 
-    main section {
-        text-align: center;
+    .first-section {
+        grid-area: first-section;
     }
-
-    button {
-        width: 40%;
+    .second-section {
+        grid-area: second-section;
+    }
+    .third-section {
+        grid-area: third-section;
     }
 
     .custom--width {
         max-width: 100%;
     }
 
-    .custom__flex-container {
-        justify-content: center;
+    .second-section {
+        border-bottom-left-radius: 10px;
+    }
+
+    .why-us__section-container {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 10px;
     }
 
     footer {
