@@ -6,4 +6,4 @@
 
 ### Output
 
-<img width="3840" height="1960" alt="SinglePriceGridComponentNew" src="https://github.com/user-attachments/assets/6142ee3d-aec4-4711-961b-113f390f4789" />
+<img width="1050" height="951" alt="SinglePriceGridComponentNew" src="https://github.com/user-attachments/assets/33bee4af-8386-45d7-9aea-6c6a5f5d78aa" />
