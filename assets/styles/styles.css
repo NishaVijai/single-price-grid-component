@@ -3,30 +3,21 @@
    ---------------------------------------------- */
 :root {
   /* Brand Colors */
-  /* --cyan-color: hsl(179, 62%, 42%); */
   --cyan-color: hsl(179, 62%, 22%);
-  /* --light-cyan-color: hsl(179, 58%, 54%); */
-  /* --light-cyan-color: hsl(179, 58%, 44%); */
   --light-cyan-color: hsl(179, 58%, 84%);
-  /* --bright-yellow-color: hsl(71, 72%, 48%); */
   --bright-yellow-color: hsl(71, 72%, 38%);
   --bright-yellow-font-color: hsl(71, 72%, 22%);
 
   /* Neutral Accessible Colors */
-  /* --light-gray-color: hsl(210, 33%, 96%); */
   --light-gray-color: hsl(210, 33%, 90%);
-  /* --grayish-blue-color: hsl(217, 20%, 42%); */
   --grayish-blue-color: hsl(217, 20%, 12%);
 
   /* Surfaces */
-  /* --white-color: #ffffff; */
   --white-color: #f2eeee;
-  /* --body-bg-color: hsl(210, 20%, 98%); */
   --body-bg-color: hsl(210, 20%, 78%);
 
   /* Text */
   --text-color: hsl(215, 25%, 20%);
-
   --button-font-color: #292929;
 }
 
@@ -92,7 +83,8 @@ ul li {
    BUTTONS
    ---------------------------------------------- */
 button {
-  border: none;
+  /* border: none; */
+  border: 2px solid transparent;
   border-radius: 5px;
   height: 3rem;
   width: 100%;
@@ -100,13 +92,14 @@ button {
   font-weight: 700;
   margin-top: 2rem;
   background-color: var(--cyan-color);
-  color: #ffffff;
   cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, outline 0.3s ease;
 }
 
 button:hover,
 button:focus-visible {
   background-color: var(--light-cyan-color);
+  border-color: var(--button-font-color);
   outline: 2px solid var(--cyan-color);
   outline-offset: 2px;
 }
@@ -134,7 +127,6 @@ button:focus-visible {
 }
 
 .bright-yellow--font-style {
-  /* color: var(--bright-yellow-color); */
   color: var(--bright-yellow-font-color);
   font-weight: 700;
   padding: 1rem 0;
@@ -185,6 +177,7 @@ button:focus-visible {
   color: var(--grayish-blue-color);
   font-size: 0.9rem;
   text-decoration: none;
+  padding: 0.25rem 0.5rem;
 }
 
 .why-us__section-container a:hover,
@@ -250,8 +243,8 @@ footer {
   }
 
   footer a {
-    /* color: hsl(228, 45%, 44%); */
     color: hsl(228, 45%, 24%);
+    padding: 0.25rem 0.15rem;
   }
 
   footer a:hover,
@@ -267,23 +260,16 @@ footer {
    ---------------------------------------------- */
 @media (prefers-color-scheme: dark) {
   :root {
-    /* --body-bg-color: #0f172a; */
     --body-bg-color: #010817;
-    --text-color: #e2e8f0;         /* slate-200 */
-
-    --light-gray-color: #cbd5e1;   /* slate-300 */
-    /* --grayish-blue-color: #94a3b8; */
-    --grayish-blue-color: #1d5db8; /* slate-400 */
-
-    /* --cyan-color: hsl(179, 70%, 50%); */
+    --text-color: #e2e8f0;
+    --light-gray-color: #cbd5e1;
+    --grayish-blue-color: #1d5db8;
     --cyan-color: hsl(179, 70%, 10%);
-    /* --light-cyan-color: hsl(179, 70%, 30%); */
     --light-cyan-color: hsl(179, 54%, 21%);
-    /* --light-cyan-color: hsl(179, 70%, 60%); */
     --bright-yellow-color: hsl(71, 80%, 62%);
-    /* --bright-yellow-font-color: hsl(71, 72%, 28%); */
     --bright-yellow-font-color: hsl(71, 72%, 18%);
     --white-color: #f1efef;
+    --button-font-color: #262626;
   }
 
   body {
@@ -292,7 +278,6 @@ footer {
   }
 
   main {
-    /* background: #1e293b; */
     background: var(--white-color);
     color: #f1f5f9;
     box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.6);
@@ -312,8 +297,6 @@ footer {
   }
 
   .why-us__section-container a {
-    /* color: #cbd5e1; */
-    /* color: #c3ccd7; */
     color: #eeeeee;
   }
 
@@ -324,7 +307,7 @@ footer {
 
   /* CARD STYLING – FULLY ACCESSIBLE */
   .card {
-    background-color: #0f172a; /* HIGH CONTRAST (13:1 vs text) */
+    background-color: #0f172a;
     color: #f1f5f9;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
   }
@@ -334,15 +317,15 @@ footer {
   }
 
   .card-desc {
-    color: #cbd5e1; /* 6.8:1 ratio */
+    color: #cbd5e1;
   }
 
   .card-meta {
-    color: #94a3b8; /* passes AA */
+    color: #94a3b8;
   }
 
   .lang-badge {
-    background-color: #1e293b; /* slate-800 */
+    background-color: #1e293b;
     color: #e2e8f0;
   }
 
@@ -357,13 +340,13 @@ footer {
   }
 
   button {
-    background-color: var(--cyan-color);
     color: #0f172a;
   }
 
   button:hover,
   button:focus-visible {
-    background-color: var(--light-cyan-color);
+    color: #9c9898;
+    border-color: #9c9898;
     outline: 2px solid var(--cyan-color);
   }
 
