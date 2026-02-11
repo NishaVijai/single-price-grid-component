@@ -8,7 +8,7 @@
 
 ## Description
 
-**Single Price Grid Component** is a **responsive pricing layout project** built using **semantic HTML and SCSS**, based on a **Frontend Mentor challenge**.
+**Single Price Grid Component** is a **responsive pricing layout project** built using **semantic HTML and CSS**, based on a **Frontend Mentor challenge**.
 
 The project focuses on building a clean and accessible pricing component with a strong emphasis on **layout consistency**, **responsive design**, and **modern CSS techniques** such as **Grid and Flexbox**.
 
