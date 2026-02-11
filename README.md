@@ -52,9 +52,6 @@ The project focuses on building a clean and accessible pricing component with a 
 * **Semantic HTML5**
   Accessible, readable, and well-structured markup.
 
-* **SCSS Architecture**
-  Modular, maintainable styles with variables and nesting.
-
 * **Pixel-Perfect UI**
   Accurate implementation of the Frontend Mentor design.
 
