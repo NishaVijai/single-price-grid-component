@@ -1,7 +1,6 @@
 # Single Price Grid Component
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5\&logoColor=white)
-![SCSS](https://img.shields.io/badge/SCSS-CC6699?logo=sass\&logoColor=white)
 ![CSS Grid](https://img.shields.io/badge/CSS%20Grid-1572B6?logo=css3\&logoColor=white)
 ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-success)
 
@@ -64,7 +63,6 @@ The project focuses on building a clean and accessible pricing component with a 
 ## Technologies Used
 
 * **HTML5** – Semantic markup
-* **SCSS (Sass)** – Modular and maintainable styling
 * **CSS Grid & Flexbox** – Responsive layout techniques
 * **GitHub Pages** – Deployment
 
@@ -98,7 +96,6 @@ single-price-grid-component/
 │
 ├── assets/              # Icons and images
 ├── index.html           # Main HTML file
-├── style.scss           # SCSS source styles
 ├── style.css            # Compiled CSS
 └── README.md            # Project documentation
 ```
